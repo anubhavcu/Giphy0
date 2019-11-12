@@ -23,7 +23,7 @@ function getData(){
   document.getElementById('input').value = '';
   let number = Math.floor(Math.random() * 25) + 1;   
   // document.getElementById('refresh').
-  fetch(`http://api.giphy.com/v1/gifs/search?&q=${search}&api_key=${api_key}`)
+  fetch(`https://api.giphy.com/v1/gifs/search?&q=${search}&api_key=${api_key}`)
     .then(res => res.json())
       .then(json => {
         console.log(json.data)
